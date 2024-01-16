@@ -1,0 +1,394 @@
+[
+    {
+        "Component Name":"Insulated Cabling",
+        "EXP":65,
+        "Multiplier":-18,
+        "Source":"Lenora's Garage",
+        "Buy Price":"280",
+        "Sell Price":140
+    },
+    {
+        "Component Name":"Fiber-optic Cable",
+        "EXP":216,
+        "Multiplier":-49,
+        "Source":"Lenora's Garage",
+        "Buy Price":"840",
+        "Sell Price":420
+    },
+    {
+        "Component Name":"Liquid Crystal Lens",
+        "EXP":70,
+        "Multiplier":-19,
+        "Source":"Lenora's Garage",
+        "Buy Price":"320",
+        "Sell Price":160
+    },
+    {
+        "Component Name":"Ring Joint",
+        "EXP":208,
+        "Multiplier":-50,
+        "Source":"Lenora's Garage",
+        "Buy Price":"840",
+        "Sell Price":420
+    },
+    {
+        "Component Name":"Epicyclic Gear",
+        "EXP":66,
+        "Multiplier":-20,
+        "Source":"Lenora's Garage",
+        "Buy Price":"320",
+        "Sell Price":160
+    },
+    {
+        "Component Name":"Crankshaft",
+        "EXP":215,
+        "Multiplier":-47,
+        "Source":"Lenora's Garage",
+        "Buy Price":"840",
+        "Sell Price":420
+    },
+    {
+        "Component Name":"Electrolytic Capacitor",
+        "EXP":68,
+        "Multiplier":-20,
+        "Source":"Bulwarker",
+        "Buy Price":"-",
+        "Sell Price":160
+    },
+    {
+        "Component Name":"Flywheel",
+        "EXP":204,
+        "Multiplier":-48,
+        "Source":"Treasure Sphere",
+        "Buy Price":"-",
+        "Sell Price":420
+    },
+    {
+        "Component Name":"Sprocket",
+        "EXP":71,
+        "Multiplier":-21,
+        "Source":"Treasure Sphere",
+        "Buy Price":"-",
+        "Sell Price":160
+    },
+    {
+        "Component Name":"Spark Plug",
+        "EXP":62,
+        "Multiplier":-18,
+        "Source":"Pulsework Gladiator",
+        "Buy Price":"-",
+        "Sell Price":160
+    },
+    {
+        "Component Name":"Iridium Plug",
+        "EXP":102,
+        "Multiplier":-48,
+        "Source":"Treasure Sphere",
+        "Buy Price":"-",
+        "Sell Price":420
+    },
+    {
+        "Component Name":"Needle Valve",
+        "EXP":70,
+        "Multiplier":-21,
+        "Source":"Boxed Phalanx",
+        "Buy Price":"-",
+        "Sell Price":160
+    },
+    {
+        "Component Name":"Butterfly Valve",
+        "EXP":232,
+        "Multiplier":-50,
+        "Source":"Ambling Bellows",
+        "Buy Price":"-",
+        "Sell Price":420
+    },
+    {
+        "Component Name":"Bomb Ashes",
+        "EXP":37,
+        "Multiplier":-8,
+        "Source":"Cryohedron",
+        "Buy Price":"-",
+        "Sell Price":90
+    },
+    {
+        "Component Name":"Bomb Fragment",
+        "EXP":82,
+        "Multiplier":-27,
+        "Source":"Lenora's Garage",
+        "Buy Price":"430",
+        "Sell Price":215
+    },
+    {
+        "Component Name":"Bomb Shell",
+        "EXP":206,
+        "Multiplier":-53,
+        "Source":"Circuitron",
+        "Buy Price":"-",
+        "Sell Price":420
+    },
+    {
+        "Component Name":"Bomb Core",
+        "EXP":551,
+        "Multiplier":-71,
+        "Source":"Cyrohedron",
+        "Buy Price":"-",
+        "Sell Price":600
+    },
+    {
+        "Component Name":"Analog Circuit",
+        "EXP":40,
+        "Multiplier":-9,
+        "Source":"Hoplite",
+        "Buy Price":"-",
+        "Sell Price":90
+    },
+    {
+        "Component Name":"Digital Circuit",
+        "EXP":89,
+        "Multiplier":-21,
+        "Source":"Aquila Velocycle",
+        "Buy Price":"-",
+        "Sell Price":230
+    },
+    {
+        "Component Name":"Gyroscope",
+        "EXP":149,
+        "Multiplier":-34,
+        "Source":"Megrim Thresher",
+        "Buy Price":"-",
+        "Sell Price":330
+    },
+    {
+        "Component Name":"Electrode",
+        "EXP":434,
+        "Multiplier":-56,
+        "Source":"Vernal Harvester",
+        "Buy Price":"-",
+        "Sell Price":500
+    },
+    {
+        "Component Name":"Ceramic Armor",
+        "EXP":147,
+        "Multiplier":-35,
+        "Source":"Lenora's Garage",
+        "Buy Price":"660",
+        "Sell Price":330
+    },
+    {
+        "Component Name":"Chobham Armor",
+        "EXP":460,
+        "Multiplier":-54,
+        "Source":"Bulwarker",
+        "Buy Price":"-",
+        "Sell Price":500
+    },
+    {
+        "Component Name":"Radial Bearing",
+        "EXP":64,
+        "Multiplier":-20,
+        "Source":"Lenora's Garage",
+        "Buy Price":"320",
+        "Sell Price":160
+    },
+    {
+        "Component Name":"Thrust Bearing",
+        "EXP":200,
+        "Multiplier":-48,
+        "Source":"Pulsework Gladiator",
+        "Buy Price":"-",
+        "Sell Price":420
+    },
+    {
+        "Component Name":"Solenoid",
+        "EXP":220,
+        "Multiplier":-47,
+        "Source":"Hoplite",
+        "Buy Price":"-",
+        "Sell Price":420
+    },
+    {
+        "Component Name":"Mobius Coil",
+        "EXP":627,
+        "Multiplier":-81,
+        "Source":"Vernal Harvester",
+        "Buy Price":"-",
+        "Sell Price":800
+    },
+    {
+        "Component Name":"Tungsten Tube",
+        "EXP":129,
+        "Multiplier":-53,
+        "Source":"Juggernaut",
+        "Buy Price":"-",
+        "Sell Price":420
+    },
+    {
+        "Component Name":"Titanium Tube",
+        "EXP":565,
+        "Multiplier":-84,
+        "Source":"Treasure Sphere",
+        "Buy Price":"-",
+        "Sell Price":750
+    },
+    {
+        "Component Name":"Passive Detector",
+        "EXP":188,
+        "Multiplier":-54,
+        "Source":"Lenora's Garage",
+        "Buy Price":"840",
+        "Sell Price":420
+    },
+    {
+        "Component Name":"Active Detector",
+        "EXP":582,
+        "Multiplier":-82,
+        "Source":"Pulsework Centurion",
+        "Buy Price":"-",
+        "Sell Price":750
+    },
+    {
+        "Component Name":"Transformer",
+        "EXP":42,
+        "Multiplier":-9,
+        "Source":"Tyrant",
+        "Buy Price":"-",
+        "Sell Price":90
+    },
+    {
+        "Component Name":"Amplifier",
+        "EXP":108,
+        "Multiplier":28,
+        "Source":"Lenora's Garage",
+        "Buy Price":"520",
+        "Sell Price":260
+    },
+    {
+        "Component Name":"Carburetor",
+        "EXP":274,
+        "Multiplier":-55,
+        "Source":"Immortal",
+        "Buy Price":"-",
+        "Sell Price":420
+    },
+    {
+        "Component Name":"Supercharger",
+        "EXP":774,
+        "Multiplier":-82,
+        "Source":"Treasure Sphere",
+        "Buy Price":"-",
+        "Sell Price":800
+    },
+    {
+        "Component Name":"Piezoelectric Element",
+        "EXP":310,
+        "Multiplier":-50,
+        "Source":"Lenora's Garage",
+        "Buy Price":"840",
+        "Sell Price":420
+    },
+    {
+        "Component Name":"Crystal Oscillator",
+        "EXP":845,
+        "Multiplier":-79,
+        "Source":"Megrim Thresher",
+        "Buy Price":"-",
+        "Sell Price":1000
+    },
+    {
+        "Component Name":"Paraffin Oil",
+        "EXP":67,
+        "Multiplier":-20,
+        "Source":"Lenora's Garage",
+        "Buy Price":"320",
+        "Sell Price":160
+    },
+    {
+        "Component Name":"Silicone Oil",
+        "EXP":152,
+        "Multiplier":-32,
+        "Source":"Lenora's Garage",
+        "Buy Price":"660",
+        "Sell Price":320
+    },
+    {
+        "Component Name":"Synthetic Muscle",
+        "EXP":222,
+        "Multiplier":-49,
+        "Source":"Treasure Sphere",
+        "Buy Price":"-",
+        "Sell Price":420
+    },
+    {
+        "Component Name":"Turbo Prop",
+        "EXP":768,
+        "Multiplier":-85,
+        "Source":"Treasure Sphere",
+        "Buy Price":"-",
+        "Sell Price":800
+    },
+    {
+        "Component Name":"Turbo Jet",
+        "EXP":212,
+        "Multiplier":-46,
+        "Source":"Lenora's Garage",
+        "Buy Price":"840",
+        "Sell Price":420
+    },
+    {
+        "Component Name":"Tesla Turbine",
+        "EXP":823,
+        "Multiplier":-79,
+        "Source":"Anavatapta Warmech",
+        "Buy Price":"-",
+        "Sell Price":900
+    },
+    {
+        "Component Name":"Polymer Emulsion",
+        "EXP":48,
+        "Multiplier":-18,
+        "Source":"Lenora's Garage",
+        "Buy Price":"200",
+        "Sell Price":100
+    },
+    {
+        "Component Name":"Ferroelectric Film",
+        "EXP":102,
+        "Multiplier":-37,
+        "Source":"Lenora's Garage",
+        "Buy Price":"460",
+        "Sell Price":230
+    },
+    {
+        "Component Name":"Superconductor",
+        "EXP":400,
+        "Multiplier":-59,
+        "Source":"Lenora's Garage",
+        "Buy Price":"840",
+        "Sell Price":420
+    },
+    {
+        "Component Name":"Perfect Conductor",
+        "EXP":751,
+        "Multiplier":-83,
+        "Source":"Lenora's Garage",
+        "Buy Price":"1600",
+        "Sell Price":800
+    },
+    {
+        "Component Name":"Particle Accelerator",
+        "EXP":4800,
+        "Multiplier":-87,
+        "Source":"R&D Depot",
+        "Buy Price":"10000",
+        "Sell Price":5000
+    },
+    {
+        "Component Name":"Ultracompact Reactor",
+        "EXP":40000,
+        "Multiplier":-100,
+        "Source":"R&D Depot",
+        "Buy Price":"50000",
+        "Sell Price":25000
+    }
+]

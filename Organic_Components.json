@@ -1,0 +1,578 @@
+[
+    {
+        "Component Name":"Begrimed Claw",
+        "EXP":4,
+        "Multiplier":4,
+        "Source":"Kaiser Behemoth",
+        "Buy Price":"-",
+        "Sell Price":15
+    },
+    {
+        "Component Name":"Bestial Claw",
+        "EXP":11,
+        "Multiplier":10,
+        "Source":"Creature Comforts",
+        "Buy Price":"80",
+        "Sell Price":40
+    },
+    {
+        "Component Name":"Gargantuan Claw",
+        "EXP":24,
+        "Multiplier":15,
+        "Source":"Creature Comforts",
+        "Buy Price":"150",
+        "Sell Price":75
+    },
+    {
+        "Component Name":"Hellish Talon",
+        "EXP":42,
+        "Multiplier":24,
+        "Source":"Kaiser Behemoth",
+        "Buy Price":"-",
+        "Sell Price":110
+    },
+    {
+        "Component Name":"Shattered Bone",
+        "EXP":4,
+        "Multiplier":8,
+        "Source":"Yaksha",
+        "Buy Price":"-",
+        "Sell Price":15
+    },
+    {
+        "Component Name":"Sturdy Bone",
+        "EXP":12,
+        "Multiplier":14,
+        "Source":"Creature Comforts",
+        "Buy Price":"80",
+        "Sell Price":40
+    },
+    {
+        "Component Name":"Otherworldly Bone",
+        "EXP":24,
+        "Multiplier":21,
+        "Source":"Creature Comforts",
+        "Buy Price":"150",
+        "Sell Price":75
+    },
+    {
+        "Component Name":"Ancient Bone",
+        "EXP":43,
+        "Multiplier":31,
+        "Source":"Yaksha",
+        "Buy Price":"-",
+        "Sell Price":110
+    },
+    {
+        "Component Name":"Moistened Scale",
+        "EXP":3,
+        "Multiplier":5,
+        "Source":"Sahagin",
+        "Buy Price":"-",
+        "Sell Price":15
+    },
+    {
+        "Component Name":"Seapetal Scale",
+        "EXP":11,
+        "Multiplier":11,
+        "Source":"Sahagin",
+        "Buy Price":"-",
+        "Sell Price":40
+    },
+    {
+        "Component Name":"Abyssal Scale",
+        "EXP":23,
+        "Multiplier":16,
+        "Source":"Orobon",
+        "Buy Price":"-",
+        "Sell Price":75
+    },
+    {
+        "Component Name":"Seaking's Beard",
+        "EXP":40,
+        "Multiplier":25,
+        "Source":"Dagonite",
+        "Buy Price":"-",
+        "Sell Price":110
+    },
+    {
+        "Component Name":"Segmented Carapace",
+        "EXP":4,
+        "Multiplier":7,
+        "Source":"Navidon",
+        "Buy Price":"-",
+        "Sell Price":15
+    },
+    {
+        "Component Name":"Iron Shell",
+        "EXP":13,
+        "Multiplier":13,
+        "Source":"Creature Comforts",
+        "Buy Price":"80",
+        "Sell Price":40
+    },
+    {
+        "Component Name":"Armored Shell",
+        "EXP":26,
+        "Multiplier":20,
+        "Source":"Creature Comforts",
+        "Buy Price":"150",
+        "Sell Price":75
+    },
+    {
+        "Component Name":"Regenerating Carapace",
+        "EXP":47,
+        "Multiplier":30,
+        "Source":"Gurangatch",
+        "Buy Price":"-",
+        "Sell Price":110
+    },
+    {
+        "Component Name":"Chipped Fang",
+        "EXP":4,
+        "Multiplier":7,
+        "Source":"Gorgonopsid",
+        "Buy Price":"-",
+        "Sell Price":15
+    },
+    {
+        "Component Name":"Wicked Fang",
+        "EXP":13,
+        "Multiplier":13,
+        "Source":"Creature Comforts",
+        "Buy Price":"80",
+        "Sell Price":40
+    },
+    {
+        "Component Name":"Monstrous Fang",
+        "EXP":26,
+        "Multiplier":20,
+        "Source":"Creature Comforts",
+        "Buy Price":"150",
+        "Sell Price":75
+    },
+    {
+        "Component Name":"Sinister Fang",
+        "EXP":40,
+        "Multiplier":30,
+        "Source":"Uridimmu",
+        "Buy Price":"-",
+        "Sell Price":110
+    },
+    {
+        "Component Name":"Severed Wing",
+        "EXP":3,
+        "Multiplier":6,
+        "Source":"Amphisbaena",
+        "Buy Price":"-",
+        "Sell Price":15
+    },
+    {
+        "Component Name":"Scaled Wing",
+        "EXP":10,
+        "Multiplier":12,
+        "Source":"Creature Comforts",
+        "Buy Price":"80",
+        "Sell Price":40
+    },
+    {
+        "Component Name":"Abominable Wing",
+        "EXP":21,
+        "Multiplier":17,
+        "Source":"Creature Comforts",
+        "Buy Price":"150",
+        "Sell Price":75
+    },
+    {
+        "Component Name":"Menacing Wing",
+        "EXP":37,
+        "Multiplier":26,
+        "Source":"Zirnitra",
+        "Buy Price":"-",
+        "Sell Price":110
+    },
+    {
+        "Component Name":"Molted Tail",
+        "EXP":4,
+        "Multiplier":8,
+        "Source":"Triffid",
+        "Buy Price":"-",
+        "Sell Price":15
+    },
+    {
+        "Component Name":"Barbed Tail",
+        "EXP":12,
+        "Multiplier":14,
+        "Source":"Creature Comforts",
+        "Buy Price":"80",
+        "Sell Price":40
+    },
+    {
+        "Component Name":"Diabolic Tail",
+        "EXP":24,
+        "Multiplier":21,
+        "Source":"Creature Comforts",
+        "Buy Price":"150",
+        "Sell Price":75
+    },
+    {
+        "Component Name":"Entrancing Tail",
+        "EXP":43,
+        "Multiplier":31,
+        "Source":"Mushussu",
+        "Buy Price":"-",
+        "Sell Price":110
+    },
+    {
+        "Component Name":"Torn Leather",
+        "EXP":3,
+        "Multiplier":5,
+        "Source":"Adroa",
+        "Buy Price":"-",
+        "Sell Price":15
+    },
+    {
+        "Component Name":"Thickened Hide",
+        "EXP":11,
+        "Multiplier":11,
+        "Source":"Creature Comforts",
+        "Buy Price":"80",
+        "Sell Price":40
+    },
+    {
+        "Component Name":"Smooth Hide",
+        "EXP":23,
+        "Multiplier":16,
+        "Source":"Creature Comforts",
+        "Buy Price":"150",
+        "Sell Price":75
+    },
+    {
+        "Component Name":"Supple Leather",
+        "EXP":40,
+        "Multiplier":25,
+        "Source":"Adroa",
+        "Buy Price":"-",
+        "Sell Price":110
+    },
+    {
+        "Component Name":"Gummy Oil",
+        "EXP":5,
+        "Multiplier":6,
+        "Source":"Alraune",
+        "Buy Price":"-",
+        "Sell Price":15
+    },
+    {
+        "Component Name":"Fragrant Oil",
+        "EXP":14,
+        "Multiplier":12,
+        "Source":"Creature Comforts",
+        "Buy Price":"80",
+        "Sell Price":40
+    },
+    {
+        "Component Name":"Medicinal Oil",
+        "EXP":29,
+        "Multiplier":19,
+        "Source":"Creature Comforts",
+        "Buy Price":"150",
+        "Sell Price":75
+    },
+    {
+        "Component Name":"Esoteric Oil",
+        "EXP":47,
+        "Multiplier":29,
+        "Source":"Alraune",
+        "Buy Price":"-",
+        "Sell Price":110
+    },
+    {
+        "Component Name":"Scraggly Wool",
+        "EXP":2,
+        "Multiplier":7,
+        "Source":"Sheep",
+        "Buy Price":"-",
+        "Sell Price":15
+    },
+    {
+        "Component Name":"Rough Wool",
+        "EXP":9,
+        "Multiplier":13,
+        "Source":"Sheep",
+        "Buy Price":"-",
+        "Sell Price":40
+    },
+    {
+        "Component Name":"Thick Wool",
+        "EXP":19,
+        "Multiplier":18,
+        "Source":"Sheep",
+        "Buy Price":"-",
+        "Sell Price":75
+    },
+    {
+        "Component Name":"Fluffy Wool",
+        "EXP":33,
+        "Multiplier":27,
+        "Source":"Sheep",
+        "Buy Price":"-",
+        "Sell Price":110
+    },
+    {
+        "Component Name":"Murky Ooze",
+        "EXP":4,
+        "Multiplier":8,
+        "Source":"Flan",
+        "Buy Price":"-",
+        "Sell Price":15
+    },
+    {
+        "Component Name":"Vibrant Ooze",
+        "EXP":12,
+        "Multiplier":14,
+        "Source":"Creature Comforts",
+        "Buy Price":"80",
+        "Sell Price":40
+    },
+    {
+        "Component Name":"Transparent Ooze",
+        "EXP":24,
+        "Multiplier":21,
+        "Source":"Creature Comforts",
+        "Buy Price":"150",
+        "Sell Price":75
+    },
+    {
+        "Component Name":"Wonder Gel",
+        "EXP":49,
+        "Multiplier":31,
+        "Source":"Ectopudding, Rusty Ooze, Ferruginous Pudding",
+        "Buy Price":"-",
+        "Sell Price":110
+    },
+    {
+        "Component Name":"Fractured Horn",
+        "EXP":3,
+        "Multiplier":6,
+        "Source":"Goblin",
+        "Buy Price":"-",
+        "Sell Price":15
+    },
+    {
+        "Component Name":"Spined Horn",
+        "EXP":10,
+        "Multiplier":12,
+        "Source":"Munchkin",
+        "Buy Price":"-",
+        "Sell Price":40
+    },
+    {
+        "Component Name":"Fiendish Horn",
+        "EXP":21,
+        "Multiplier":17,
+        "Source":"Goblin",
+        "Buy Price":"-",
+        "Sell Price":75
+    },
+    {
+        "Component Name":"Infernal Horn",
+        "EXP":37,
+        "Multiplier":26,
+        "Source":"Borgbear",
+        "Buy Price":"-",
+        "Sell Price":110
+    },
+    {
+        "Component Name":"Strange Fluid",
+        "EXP":5,
+        "Multiplier":6,
+        "Source":"Ceratosaur",
+        "Buy Price":"-",
+        "Sell Price":15
+    },
+    {
+        "Component Name":"Enigmatic Fluid",
+        "EXP":14,
+        "Multiplier":12,
+        "Source":"Creature Comforts",
+        "Buy Price":"80",
+        "Sell Price":40
+    },
+    {
+        "Component Name":"Mysterious Fluid",
+        "EXP":24,
+        "Multiplier":21,
+        "Source":"Creature Comforts",
+        "Buy Price":"150",
+        "Sell Price":75
+    },
+    {
+        "Component Name":"Ineffable Fluid",
+        "EXP":43,
+        "Multiplier":29,
+        "Source":"Ceratosaur",
+        "Buy Price":"-",
+        "Sell Price":110
+    },
+    {
+        "Component Name":"Cie'th Tear",
+        "EXP":6,
+        "Multiplier":10,
+        "Source":"Seeker",
+        "Buy Price":"-",
+        "Sell Price":15
+    },
+    {
+        "Component Name":"Tear of Frustration",
+        "EXP":12,
+        "Multiplier":14,
+        "Source":"Pijavica",
+        "Buy Price":"-",
+        "Sell Price":40
+    },
+    {
+        "Component Name":"Tear of Remorse",
+        "EXP":24,
+        "Multiplier":24,
+        "Source":"Seeker",
+        "Buy Price":"-",
+        "Sell Price":75
+    },
+    {
+        "Component Name":"Tear of Woe",
+        "EXP":49,
+        "Multiplier":40,
+        "Source":"Vampire",
+        "Buy Price":"-",
+        "Sell Price":110
+    },
+    {
+        "Component Name":"Red Mycelium",
+        "EXP":6,
+        "Multiplier":10,
+        "Source":"Treasure Sphere",
+        "Buy Price":"-",
+        "Sell Price":85
+    },
+    {
+        "Component Name":"Blue Mycelium",
+        "EXP":22,
+        "Multiplier":21,
+        "Source":"Treasure Sphere",
+        "Buy Price":"-",
+        "Sell Price":190
+    },
+    {
+        "Component Name":"White Mycelium",
+        "EXP":48,
+        "Multiplier":34,
+        "Source":"Treasure Sphere",
+        "Buy Price":"-",
+        "Sell Price":360
+    },
+    {
+        "Component Name":"Black Mycelium",
+        "EXP":84,
+        "Multiplier":51,
+        "Source":"Treasure Sphere",
+        "Buy Price":"-",
+        "Sell Price":675
+    },
+    {
+        "Component Name":"Dawnlight Dew",
+        "EXP":12,
+        "Multiplier":31,
+        "Source":"Chocobo",
+        "Buy Price":"-",
+        "Sell Price":500
+    },
+    {
+        "Component Name":"Dusklight Dew",
+        "EXP":28,
+        "Multiplier":42,
+        "Source":"Chocobo",
+        "Buy Price":"-",
+        "Sell Price":850
+    },
+    {
+        "Component Name":"Gloomstalk",
+        "EXP":32,
+        "Multiplier":46,
+        "Source":"Microchu",
+        "Buy Price":"-",
+        "Sell Price":1000
+    },
+    {
+        "Component Name":"Sunpetal",
+        "EXP":102,
+        "Multiplier":21,
+        "Source":"Ochu",
+        "Buy Price":"-",
+        "Sell Price":1000
+    },
+    {
+        "Component Name":"Moonblossom Seed",
+        "EXP":73,
+        "Multiplier":55,
+        "Source":"Bandersnatch",
+        "Buy Price":"-",
+        "Sell Price":6000
+    },
+    {
+        "Component Name":"Starblossom Seed",
+        "EXP":230,
+        "Multiplier":91,
+        "Source":"Bandersnatch",
+        "Buy Price":"-",
+        "Sell Price":13000
+    },
+    {
+        "Component Name":"Chocobo Plume",
+        "EXP":7,
+        "Multiplier":34,
+        "Source":"Chocobo",
+        "Buy Price":"-",
+        "Sell Price":20
+    },
+    {
+        "Component Name":"Chocobo Tail Feather",
+        "EXP":29,
+        "Multiplier":58,
+        "Source":"Chocobo",
+        "Buy Price":"-",
+        "Sell Price":50
+    },
+    {
+        "Component Name":"Succulent Fruit",
+        "EXP":10,
+        "Multiplier":55,
+        "Source":"Treasure Sphere",
+        "Buy Price":"-",
+        "Sell Price":1750
+    },
+    {
+        "Component Name":"Malodorus Fruit",
+        "EXP":7,
+        "Multiplier":21,
+        "Source":"Treasure Sphere",
+        "Buy Price":"-",
+        "Sell Price":4000
+    },
+    {
+        "Component Name":"Green Needle",
+        "EXP":60,
+        "Multiplier":100,
+        "Source":"R&D Depot",
+        "Buy Price":"7000",
+        "Sell Price":3500
+    },
+    {
+        "Component Name":"Perfume",
+        "EXP":180,
+        "Multiplier":120,
+        "Source":"Sacrifice",
+        "Buy Price":"-",
+        "Sell Price":12500
+    }
+]
