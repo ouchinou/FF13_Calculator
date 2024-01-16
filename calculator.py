@@ -4,8 +4,8 @@ from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QComboBox, QLabe
 from PyQt6.QtGui import QPixmap
 from PyQt6.QtCore import Qt, QSize
 
-import Weapon as weapon
-import Accessories as accessories
+import weapon as weapon
+import accessory as accessory
 
 
 class FF13Calculator(QWidget):
@@ -23,6 +23,11 @@ class FF13Calculator(QWidget):
         self.info_label = QLabel("Strength:\nMagic:\nExperience:\nCatalyst:\nShop:")
         self.multiplier_combo_box = QComboBox()
         self.component_table = QTableWidget()
+        self.selected_character_name = None   # Le personnage sélectionné
+        self.selected_weapon = None      # L'arme sélectionnée
+        self.cur_level = None       # Le niveau actuel
+        self.cur_exp = None         # L'expérience actuelle
+        self.selected_multiplier = None  # Le multiplicateur actuel
 
         self.initUI()
 
@@ -94,10 +99,10 @@ class FF13Calculator(QWidget):
         weapon_layout = QVBoxLayout()
 
         self.character_combo_box.addItems(self.weapons_by_character.keys())
-        self.character_combo_box.currentIndexChanged.connect(self.update_weapons)
+        self.character_combo_box.currentIndexChanged.connect(self.on_character_selection_change)
         weapon_layout.addWidget(self.character_combo_box)
 
-        self.weapon_combo_box.currentIndexChanged.connect(self.on_weapon_selection_changed)
+        self.weapon_combo_box.currentIndexChanged.connect(self.on_weapon_selection_change)
         weapon_layout.addWidget(self.weapon_combo_box)
 
         weapon_tab.setLayout(weapon_layout)
@@ -183,31 +188,36 @@ class FF13Calculator(QWidget):
         multiplier_layout.addWidget(self.component_table)
         return multiplier_layout
 
-
 ##############################################
 # Méthodes pour gérer les événements
 ##############################################
-    def on_weapon_selection_changed(self):
+    def on_character_selection_change(self):
+        self.selected_character_name = self.character_combo_box.currentText()
+        print(f"Change Character to: {self.selected_character_name}")
+        self.update_weapons()
+
+    def on_weapon_selection_change(self):
         weapon_name = self.weapon_combo_box.currentText()
         print(f"Selected Weapon: {weapon_name}")
-        selected_weapon = self.get_selected_weapon(weapon_name)
-        if selected_weapon:
-            self.update_weapon_info(selected_weapon)
+        self.selected_weapon = self.get_selected_weapon(weapon_name)
+        if self.selected_weapon:
+            self.update_remaining_exp_label()
+            self.update_weapon_info(self.selected_weapon)
 
     def on_level_or_exp_change(self):
         print("on_level_or_exp_change")
         # Gérer le changement de texte ici
-        level = self.level_line_edit.text()
-        exp = self.exp_line_edit.text()
-        print(f"Level: {level}")
-        print(f"EXP: {exp}")
-        self.update_remaining_exp_label(100)
+        self.cur_level = self.level_line_edit.text()
+        self.cur_exp = self.exp_line_edit.text()
+        print(f"Level: {self.cur_level}")
+        print(f"EXP: {self.cur_exp}")
+        self.update_remaining_exp_label()
 
     def on_multiplier_change(self):
         # Gérer le changement de sélection ici
-        selected_multiplier = self.multiplier_combo_box.currentText()
-        print(f"Selected Multiplier: {selected_multiplier}")
-        self.update_table(selected_multiplier)
+        self.selected_multiplier = self.multiplier_combo_box.currentText()
+        print(f"Selected Multiplier: {self.selected_multiplier}")
+        self.update_table(self.selected_multiplier)
 
 ##############################################
 # Méthodes pour gérer les données
@@ -222,12 +232,6 @@ class FF13Calculator(QWidget):
             if selected_weapon:
                 break
         return selected_weapon
-
-    def get_weapon_title(self, weapon):
-        """Génère et retourne le titre de l'arme basé sur le niveau actuel."""
-        current_lv = self.level_line_edit.text()  # Récupère le niveau actuel de l'interface
-        title = f"{weapon.name} {current_lv}/{weapon.max_lv}"
-        return title
 
 ##############################################
 # Méthodes pour mettre à jour les données
@@ -246,26 +250,24 @@ class FF13Calculator(QWidget):
                     f"Shop: {weapon.shop}"
         #self.info_label.setText(info_text)
 
-        # Appel de la méthode pour mettre à jour remaining_exp_label
-        exp_req_before_star = weapon.exp_max #- self.exp_line_edit.currentText()
-        self.update_remaining_exp_label(exp_req_before_star)
-
-    def update_remaining_exp_label(self, exp_req_before_star):
+    def update_remaining_exp_label(self):
         print("update_remaining_exp_label")
+        # Gérer le changement de texte ici
+        exp_max = self.get_selected_weapon(self.weapon_combo_box.currentText()).exp_max
+        exp_req_before_star= exp_max# - int(self.cur_exp)
 #        self.remaining_exp_label.setText(f"Experience Required for ★: {exp_req_before_star}")
-        self.remaining_exp_label.setText(f"{exp_req_before_star}")
+        self.remaining_exp_label.setText(f"                   {exp_req_before_star}")
 
     def update_table(self, multiplier):
         pass
 
     def update_weapons(self):
-        character = self.character_combo_box.currentText()
-        print(f"Selected Character: {character}")
-        weapons = self.weapons_by_character.get(character, [])
+        character_name = self.character_combo_box.currentText()
+        print(f"Selected Character_weapon: {character_name}")
+        weapons = self.weapons_by_character.get(character_name, [])
         self.weapon_combo_box.clear()
         self.weapon_combo_box.addItems([weapon.name for weapon in weapons])
-        
-        self.update_character_image(character)
+        self.update_character_image(character_name)
 
     def update_info_label(self, strength, magic, experience, catalyst, shop):
         """Mettre à jour le label avec les informations calculées."""
@@ -288,7 +290,7 @@ class FF13Calculator(QWidget):
 def main():
     app = QApplication(sys.argv)
     weapons_data = weapon.weapons_by_character
-    accessories_data = accessories.accessories_list
+    accessories_data = accessory.accessories_list
     calculator  = FF13Calculator(weapons_data, accessories_data)
     sys.exit(app.exec())
 
