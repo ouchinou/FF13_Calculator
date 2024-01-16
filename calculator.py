@@ -4,8 +4,8 @@ from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QComboBox, QLabe
 from PyQt6.QtGui import QPixmap
 from PyQt6.QtCore import Qt, QSize
 
-import Weapon as weapon
-import Accessories as accessories
+import weapons
+import accessories
 
 
 class FF13Calculator(QWidget):
@@ -31,12 +31,12 @@ class FF13Calculator(QWidget):
 
         # Création du layout principal
         mainLayout = QHBoxLayout(self)
-        
+
         # Configuration des différentes parties de l'interface
         self.setup_left_part(mainLayout)
         self.setup_central_part(mainLayout)
         self.setup_right_part(mainLayout)
-    
+
         # Configuration de la fenêtre
         self.setLayout(mainLayout)
         self.setWindowTitle('FF13 Weapon Calculator')
@@ -58,14 +58,14 @@ class FF13Calculator(QWidget):
 
         # Création et configuration des onglets
         tab_widget = QTabWidget()
-        weapon_tab = self.setup_weapon_tab() # Création de l'onglet des armes
+        weapon_tab = self.setup_weapon_tab()  # Création de l'onglet des armes
 
         # Ajout des onglets
         tab_widget.addTab(weapon_tab, "Weapons")
 
         central_layout.addWidget(tab_widget)
 
-        tab_widget.setFixedHeight(150) # Hauteur fixe pour les onglets
+        tab_widget.setFixedHeight(150)  # Hauteur fixe pour les onglets
 
         # Ajout du formulaire sous les onglets
         self.setup_info_form(central_layout)
@@ -87,7 +87,7 @@ class FF13Calculator(QWidget):
         layout.addWidget(multiplier_frame)
 
 ##############################################
-# Méthodes pour configurer les onglets et le formulaire 
+# Méthodes pour configurer les onglets et le formulaire
 ##############################################
     def setup_weapon_tab(self):
         weapon_tab = QWidget()
@@ -127,7 +127,7 @@ class FF13Calculator(QWidget):
         # QLabel pour afficher les informations supplémentaires
         layout.addWidget(self.info_label)
         print("setup_additional_info")
-        #update_info_label(self, strength, magic, experience, catalyst, shop):
+        # update_info_label(self, strength, magic, experience, catalyst, shop):
 
 ##############################################
 # Méthodes pour configurer le multiplicateur et le tableau
@@ -135,7 +135,7 @@ class FF13Calculator(QWidget):
     def create_multiplier_layout(self):
         # Création et retour du layout du multiplicateur et du tableau
         multiplier_layout = QVBoxLayout()
-        
+
         # Layout pour le multiplicateur
         multiplier_layout = QVBoxLayout()
         multiplier_label = QLabel("Current Multiplier")
@@ -150,7 +150,7 @@ class FF13Calculator(QWidget):
 
         # Connecter le signal currentIndexChanged à la méthode de gestion
         self.multiplier_combo_box.currentIndexChanged.connect(self.on_multiplier_change)
-        
+
         # Création du QTableWidget
         self.component_table.setRowCount(4)  # Nombre de lignes
         self.component_table.setColumnCount(3)  # Nombre de colonnes
@@ -187,6 +187,7 @@ class FF13Calculator(QWidget):
 ##############################################
 # Méthodes pour gérer les événements
 ##############################################
+
     def on_weapon_selection_changed(self):
         weapon_name = self.weapon_combo_box.currentText()
         print(f"Selected Weapon: {weapon_name}")
@@ -231,7 +232,7 @@ class FF13Calculator(QWidget):
 
 ##############################################
 # Méthodes pour mettre à jour les données
-##############################################    
+##############################################
     def update_weapon_info(self, weapon):
         # Format the required information from the weapon object
         strength_info = f"{weapon.str_min} - {weapon.str_max}"
@@ -244,10 +245,10 @@ class FF13Calculator(QWidget):
                     f"Experience: {experience_info}\n" \
                     f"Catalyst: {weapon.catalyst}\n" \
                     f"Shop: {weapon.shop}"
-        #self.info_label.setText(info_text)
+        # self.info_label.setText(info_text)
 
         # Appel de la méthode pour mettre à jour remaining_exp_label
-        exp_req_before_star = weapon.exp_max #- self.exp_line_edit.currentText()
+        exp_req_before_star = weapon.exp_max  # - self.exp_line_edit.currentText()
         self.update_remaining_exp_label(exp_req_before_star)
 
     def update_remaining_exp_label(self, exp_req_before_star):
@@ -264,7 +265,7 @@ class FF13Calculator(QWidget):
         weapons = self.weapons_by_character.get(character, [])
         self.weapon_combo_box.clear()
         self.weapon_combo_box.addItems([weapon.name for weapon in weapons])
-        
+
         self.update_character_image(character)
 
     def update_info_label(self, strength, magic, experience, catalyst, shop):
@@ -285,11 +286,12 @@ class FF13Calculator(QWidget):
         else:
             print(f"Image not found for character: {character}")
 
+
 def main():
     app = QApplication(sys.argv)
-    weapons_data = weapon.weapons_by_character
-    accessories_data = accessories.accessories_list
-    calculator  = FF13Calculator(weapons_data, accessories_data)
+    weapons_data = weapons.JsonLoader.load()
+    accessories_data = accessories.JsonLoader.load()
+    calculator = FF13Calculator(weapons_data, accessories_data)
     sys.exit(app.exec())
 
 
