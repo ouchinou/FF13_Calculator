@@ -1,192 +1,65 @@
 import sys
+import os
+from pathlib import Path
 
-from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QComboBox, QLabel, QHBoxLayout, QTabWidget, QTableWidget, QTableWidgetItem, QLineEdit, QFormLayout, QFrame
+from PyQt6.QtWidgets import QApplication, QMainWindow
 from PyQt6.QtGui import QPixmap
-from PyQt6.QtCore import Qt, QSize
+from PyQt6.QtCore import Qt
+from PyQt6 import uic
 
 import weapons
 import accessories
 
 
-class FF13Calculator(QWidget):
-    def __init__(self, weapons_by_character, accessories_list):
-        super().__init__()
+class FF13Calculator(QMainWindow):
+    """This "window" is a QWidget. If it has no parent, it will appear as a free-floating window as we want."""
+
+    def __init__(self, weapons_by_character, accessories_list, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        # initialize UI from the QtDesigner UI file
+        uic.loadUi(Path(__file__).parent / "gui" / "FF13_Calculator.ui", self)
+
         self.weapons_by_character = weapons_by_character
         self.accessories_list = accessories_list
 
-        self.character_image_label = QLabel(self)
-        self.character_combo_box = QComboBox()
-        self.weapon_combo_box = QComboBox()
-        self.level_line_edit = QLineEdit("1")
-        self.exp_line_edit = QLineEdit("0")
-        self.remaining_exp_label = QLabel()
-        self.info_label = QLabel("Strength:\nMagic:\nExperience:\nCatalyst:\nShop:")
-        self.multiplier_combo_box = QComboBox()
-        self.component_table = QTableWidget()
+        # initialize callbacks
+        self.init_callbacks()
 
-        self.initUI()
+        # update GUI from loaded files
+        self.initialize_gui()
 
-    def initUI(self):
-        # Configuration principale de la fenêtre
-
-        # Création du layout principal
-        mainLayout = QHBoxLayout(self)
-
-        # Configuration des différentes parties de l'interface
-        self.setup_left_part(mainLayout)
-        self.setup_central_part(mainLayout)
-        self.setup_right_part(mainLayout)
-
-        # Configuration de la fenêtre
-        self.setLayout(mainLayout)
-        self.setWindowTitle('FF13 Weapon Calculator')
-        self.setGeometry(50, 50, 1300, 800)
-        self.show()
-
-##############################################
-# Méthodes pour composer l'interface en trois parties (gauche, centre, droite)
-##############################################
-
-    def setup_left_part(self, layout):
-        self.character_image_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.character_image_label.setFixedSize(500, 600)
-        layout.addWidget(self.character_image_label)
-
-    def setup_central_part(self, layout):
-        # Création du layout vertical pour la partie centrale
-        central_layout = QVBoxLayout()
-
-        # Création et configuration des onglets
-        tab_widget = QTabWidget()
-        weapon_tab = self.setup_weapon_tab()  # Création de l'onglet des armes
-
-        # Ajout des onglets
-        tab_widget.addTab(weapon_tab, "Weapons")
-
-        central_layout.addWidget(tab_widget)
-
-        tab_widget.setFixedHeight(150)  # Hauteur fixe pour les onglets
-
-        # Ajout du formulaire sous les onglets
-        self.setup_info_form(central_layout)
-
-        # Ajout des informations supplémentaires sous le formulaire
-        self.setup_additional_info(central_layout)
-
-        # Ajout des onglets au layout principal
-        layout.addLayout(central_layout)
-
-    def setup_right_part(self, layout):
-        # ... configuration du multiplicateur et du QTableWidget ...
-        multiplier_frame = QFrame()
-        multiplier_frame_layout = QVBoxLayout(multiplier_frame)
-        multiplier_frame_layout.addLayout(self.create_multiplier_layout())
-        multiplier_frame.setLayout(multiplier_frame_layout)
-        multiplier_frame.setFixedWidth(450)
-        multiplier_frame.setFixedHeight(200)
-        layout.addWidget(multiplier_frame)
-
-##############################################
-# Méthodes pour configurer les onglets et le formulaire
-##############################################
-    def setup_weapon_tab(self):
-        weapon_tab = QWidget()
-        weapon_layout = QVBoxLayout()
-
-        self.character_combo_box.addItems(self.weapons_by_character.keys())
-        self.character_combo_box.currentIndexChanged.connect(self.update_weapons)
-        weapon_layout.addWidget(self.character_combo_box)
-
-        self.weapon_combo_box.currentIndexChanged.connect(self.on_weapon_selection_changed)
-        weapon_layout.addWidget(self.weapon_combo_box)
-
-        weapon_tab.setLayout(weapon_layout)
+        # finalize UI
+        self.finalize_UI()
         self.update_weapons()
 
-        return weapon_tab
+    def init_callbacks(self):
+        # character/weapon
+        self.character_combo_box.currentIndexChanged.connect(self.update_weapons)
+        self.weapon_combo_box.currentIndexChanged.connect(self.on_weapon_selection_changed)
 
-    def setup_info_form(self, layout):
-        # Création d'un layout de formulaire pour les informations supplémentaires
-        form_layout = QFormLayout()
-
-        # QLineEdit pour le niveau actuel
+        # info form
         self.level_line_edit.textChanged.connect(self.on_level_or_exp_change)
-        form_layout.addRow("Current Level", self.level_line_edit)
-
-        # QLineEdit pour l'expérience actuelle
         self.exp_line_edit.textChanged.connect(self.on_level_or_exp_change)
-        form_layout.addRow("Current Experience", self.exp_line_edit)
 
-        # QLabel pour l'expérience restante
-        form_layout.addRow("Experience Required for ★", self.remaining_exp_label)
+        # additional info
 
-        # Ajout du layout du formulaire au layout des onglets
-        layout.addLayout(form_layout)
-
-    def setup_additional_info(self, layout):
-        # QLabel pour afficher les informations supplémentaires
-        layout.addWidget(self.info_label)
-        print("setup_additional_info")
-        # update_info_label(self, strength, magic, experience, catalyst, shop):
-
-##############################################
-# Méthodes pour configurer le multiplicateur et le tableau
-##############################################
-    def create_multiplier_layout(self):
-        # Création et retour du layout du multiplicateur et du tableau
-        multiplier_layout = QVBoxLayout()
-
-        # Layout pour le multiplicateur
-        multiplier_layout = QVBoxLayout()
-        multiplier_label = QLabel("Current Multiplier")
-        multiplier_layout.addWidget(multiplier_label)
-
-        multipliers = ["1", "1.25", "1.50", "1.75", "2", "2.25", "2.5", "2.75", "3"]
-        self.multiplier_combo_box.addItems(multipliers)
-        default_multiplier_index = self.multiplier_combo_box.findText("3")
-        if default_multiplier_index >= 0:
-            self.multiplier_combo_box.setCurrentIndex(default_multiplier_index)
-        multiplier_layout.addWidget(self.multiplier_combo_box)
-
-        # Connecter le signal currentIndexChanged à la méthode de gestion
+        # multiplier
         self.multiplier_combo_box.currentIndexChanged.connect(self.on_multiplier_change)
 
-        # Création du QTableWidget
-        self.component_table.setRowCount(4)  # Nombre de lignes
-        self.component_table.setColumnCount(3)  # Nombre de colonnes
+    def initialize_gui(self):
+        # fill combo boxes
+        self.character_combo_box.addItems(self.weapons_by_character.keys())
 
-        # Définir les en-têtes de colonnes
-        self.component_table.setHorizontalHeaderLabels(["Name", "Number Required", "Cost(Gil)"])
-
+    def finalize_UI(self):
         # Ajustement de la largeur des colonnes
         self.component_table.setColumnWidth(0, 125)  # Largeur pour "Name"
         self.component_table.setColumnWidth(1, 125)  # Largeur pour "Number Required"
         self.component_table.setColumnWidth(2, 125)  # Largeur pour "Cost(Gil)"
 
-        # Ajout des données au tableau
-        components = ["Superconductor", "Perfect Conductor", "Particle Accelerator", "Ultracompact Reactor"]
-        for row, name in enumerate(components):
-            self.component_table.setItem(row, 0, QTableWidgetItem(name))
-            # Les autres cellules sont laissées vides pour l'instant
-            self.component_table.setItem(row, 1, QTableWidgetItem(""))  # Number Required
-            self.component_table.setItem(row, 2, QTableWidgetItem(""))  # Cost(Gil)
-
-        # Calculer et fixer la hauteur totale de la table
-        header_height = self.component_table.horizontalHeader().height()
-        row_height = self.component_table.rowHeight(0)  # Hauteur d'une ligne
-        extra_padding = 10  # Ajouter un peu d'espace supplémentaire pour les marges
-        # Calculez la hauteur totale en incluant l'en-tête et l'espace supplémentaire
-        table_height = header_height + (row_height * self.component_table.rowCount()) + extra_padding
-        self.component_table.setFixedHeight(table_height)
-
-        # Ajout du tableau au layout du multiplicateur
-        multiplier_layout.addWidget(self.component_table)
-        return multiplier_layout
-
-
-##############################################
-# Méthodes pour gérer les événements
-##############################################
+    ##############################################
+    # Méthodes pour gérer les événements
+    ##############################################
 
     def on_weapon_selection_changed(self):
         weapon_name = self.weapon_combo_box.currentText()
@@ -210,9 +83,9 @@ class FF13Calculator(QWidget):
         print(f"Selected Multiplier: {selected_multiplier}")
         self.update_table(selected_multiplier)
 
-##############################################
-# Méthodes pour gérer les données
-##############################################
+    ##############################################
+    # Méthodes pour gérer les données
+    ##############################################
     def get_selected_weapon(self, weapon_name):
         selected_weapon = None
         for character_weapons in self.weapons_by_character.values():
@@ -230,22 +103,21 @@ class FF13Calculator(QWidget):
         title = f"{weapon.name} {current_lv}/{weapon.max_lv}"
         return title
 
-##############################################
-# Méthodes pour mettre à jour les données
-##############################################
+    ##############################################
+    # Méthodes pour mettre à jour les données
+    ##############################################
     def update_weapon_info(self, weapon):
         # Format the required information from the weapon object
         strength_info = f"{weapon.str_min} - {weapon.str_max}"
         magic_info = f"{weapon.mag_min} - {weapon.mag_max}"
-        experience_info = f"Current: {weapon.exp_current}, Max: {weapon.exp_max}"
+        experience_info = f"Current: {weapon.exp_current:_}, Max: {weapon.exp_max:_}"
 
         # Update the weapon information
-        info_text = f"Strength: {strength_info}\n" \
-                    f"Magic: {magic_info}\n" \
-                    f"Experience: {experience_info}\n" \
-                    f"Catalyst: {weapon.catalyst}\n" \
-                    f"Shop: {weapon.shop}"
-        # self.info_label.setText(info_text)
+        self.update_info_label(strength=strength_info,
+                               magic=magic_info,
+                               experience=experience_info,
+                               catalyst=weapon.catalyst,
+                               shop=weapon.shop)
 
         # Appel de la méthode pour mettre à jour remaining_exp_label
         exp_req_before_star = weapon.exp_max  # - self.exp_line_edit.currentText()
@@ -253,7 +125,6 @@ class FF13Calculator(QWidget):
 
     def update_remaining_exp_label(self, exp_req_before_star):
         print("update_remaining_exp_label")
-#        self.remaining_exp_label.setText(f"Experience Required for ★: {exp_req_before_star}")
         self.remaining_exp_label.setText(f"{exp_req_before_star}")
 
     def update_table(self, multiplier):
@@ -270,15 +141,14 @@ class FF13Calculator(QWidget):
 
     def update_info_label(self, strength, magic, experience, catalyst, shop):
         """Mettre à jour le label avec les informations calculées."""
-        info_text = f"Strength: {strength}\n" \
-                    f"Magic: {magic}\n" \
-                    f"Experience: {experience}\n" \
-                    f"Catalyst: {catalyst}\n" \
-                    f"Shop: {shop}"
-        self.info_label.setText(info_text)
+        self.txt_info_strength.setText(strength)
+        self.txt_info_magic.setText(magic)
+        self.txt_info_experience.setText(experience)
+        self.txt_info_catalyst.setText(catalyst)
+        self.txt_info_shop.setText(shop)
 
     def update_character_image(self, character):
-        image_path = f'pics/{character}.png'  # Assurez-vous que le chemin est correct
+        image_path = os.path.join('pics', f'{character}.png')
         pixmap = QPixmap(image_path)
         if not pixmap.isNull():
             # Ajustement de la taille du pixmap pour s'assurer qu'il n'est pas redimensionné
@@ -288,10 +158,18 @@ class FF13Calculator(QWidget):
 
 
 def main():
+    # create Application
     app = QApplication(sys.argv)
+
+    # load files
     weapons_data = weapons.JsonLoader.load()
     accessories_data = accessories.JsonLoader.load()
+
+    # create main window
     calculator = FF13Calculator(weapons_data, accessories_data)
+    calculator.show()
+
+    # start main loop
     sys.exit(app.exec())
 
 
