@@ -64,24 +64,25 @@ class FF13Calculator(QMainWindow):
     def on_weapon_selection_changed(self):
         weapon_name = self.weapon_combo_box.currentText()
         print(f"Selected Weapon: {weapon_name}")
-        selected_weapon = self.get_selected_weapon(weapon_name)
-        if selected_weapon:
-            self.update_weapon_info(selected_weapon)
+        self.selected_weapon = self.get_selected_weapon(weapon_name)
+        if self.selected_weapon:
+            self.update_remaining_exp_label()
+            self.update_weapon_info(self.selected_weapon)
 
     def on_level_or_exp_change(self):
         print("on_level_or_exp_change")
         # Gérer le changement de texte ici
-        level = self.level_line_edit.text()
-        exp = self.exp_line_edit.text()
-        print(f"Level: {level}")
-        print(f"EXP: {exp}")
-        self.update_remaining_exp_label(100)
+        self.cur_level = self.level_line_edit.text()
+        self.cur_exp = self.exp_line_edit.text()
+        print(f"Level: {self.cur_level}")
+        print(f"EXP: {self.cur_exp}")
+        self.update_remaining_exp_label()
 
     def on_multiplier_change(self):
         # Gérer le changement de sélection ici
-        selected_multiplier = self.multiplier_combo_box.currentText()
-        print(f"Selected Multiplier: {selected_multiplier}")
-        self.update_table(selected_multiplier)
+        self.selected_multiplier = self.multiplier_combo_box.currentText()
+        print(f"Selected Multiplier: {self.selected_multiplier}")
+        self.update_table(self.selected_multiplier)
 
     ##############################################
     # Méthodes pour gérer les données
@@ -119,25 +120,25 @@ class FF13Calculator(QMainWindow):
                                catalyst=weapon.catalyst,
                                shop=weapon.shop)
 
-        # Appel de la méthode pour mettre à jour remaining_exp_label
-        exp_req_before_star = weapon.exp_max  # - self.exp_line_edit.currentText()
-        self.update_remaining_exp_label(exp_req_before_star)
-
-    def update_remaining_exp_label(self, exp_req_before_star):
+    def update_remaining_exp_label(self):
         print("update_remaining_exp_label")
-        self.remaining_exp_label.setText(f"{exp_req_before_star}")
+        # Gérer le changement de texte ici
+        exp_max = self.get_selected_weapon(self.weapon_combo_box.currentText()).exp_max
+        exp_req_before_star = exp_max  # - int(self.cur_exp)
+#        self.remaining_exp_label.setText(f"Experience Required for ★: {exp_req_before_star}")
+        self.remaining_exp_label.setText(f"                   {exp_req_before_star}")
 
     def update_table(self, multiplier):
         pass
 
     def update_weapons(self):
-        character = self.character_combo_box.currentText()
-        print(f"Selected Character: {character}")
-        weapons = self.weapons_by_character.get(character, [])
+        character_name = self.character_combo_box.currentText()
+        print(f"Selected Character_weapon: {character_name}")
+        weapons = self.weapons_by_character.get(character_name, [])
         self.weapon_combo_box.clear()
         self.weapon_combo_box.addItems([weapon.name for weapon in weapons])
 
-        self.update_character_image(character)
+        self.update_character_image(character_name)
 
     def update_info_label(self, strength, magic, experience, catalyst, shop):
         """Mettre à jour le label avec les informations calculées."""
