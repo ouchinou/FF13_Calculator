@@ -1,4 +1,3 @@
-from importlib.machinery import SourcelessFileLoader
 import sys
 import os
 import math
@@ -292,11 +291,11 @@ class FF13Calculator(QMainWindow):
         light_green.setAlpha(128)  # Définir l'opacité à 50%
 
         # Trouver le coût minimum
-        min_cost = min(self.component_table.item(row, 2).text() for row in range(self.component_table.rowCount()))
+        min_cost = min(int(self.component_table.item(row, 2).text()) for row in range(self.component_table.rowCount()))
 
         # Mettre en évidence la ligne avec le coût minimum
         for row in range(self.component_table.rowCount()):
-            gils = self.component_table.item(row, 2).text()
+            gils = int(self.component_table.item(row, 2).text())
             current_text = self.component_table.item(row, 2).text()
             new_item = QTableWidgetItem(current_text)
 
