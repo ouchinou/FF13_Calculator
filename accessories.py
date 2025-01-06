@@ -3,8 +3,9 @@ import os
 
 
 class Accessory:
-    def __init__(self, Name, Rank, Max_Lv, Min, Max, Increment, Effect_Lv_1, Synthesis_Group, Buy_Price, Sell_Price, Shop, Catalyst, EXP_Total, EXP_Max, EXP_Initial, EXP_Increment):
+    def __init__(self, Name, Name_FR, Rank, Max_Lv, Min, Max, Increment, Effect_Lv_1, Synthesis_Group, Buy_Price, Sell_Price, Shop, Catalyst, EXP_Total, EXP_Max, EXP_Initial, EXP_Increment):
         self.name = Name
+        self.name_fr = Name_FR
         self.rank = self.get_int(Rank)
         self.max_lv = self.get_int(Max_Lv)
         self.min = self.get_int(Min)
@@ -16,7 +17,7 @@ class Accessory:
         self.sell_price = self.get_int(Sell_Price)
         self.shop = Shop
         self.catalyst = Catalyst
-        self.exp_max = self.get_int(EXP_Max)
+        self.exp_max = self.get_int(EXP_Total)
         self.exp_initial = self.get_int(EXP_Initial)
         self.exp_increment = self.get_int(EXP_Increment)
 

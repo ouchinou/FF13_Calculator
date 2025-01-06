@@ -1,6 +1,7 @@
 [
     {
         "Name":"Iron Bangle",
+		"Name_FR":"Bracelet Fer",
         "Rank":1,
         "Max_Lv":6,
         "Min":"50",
@@ -19,6 +20,7 @@
     },
     {
         "Name":"Silver Bangle",
+		"Name_FR":"Bracelet Argent",
         "Rank":2,
         "Max_Lv":6,
         "Min":"100",
@@ -37,6 +39,7 @@
     },
     {
         "Name":"Tungsten Bangle",
+		"Name_FR":"Bracelet Tungstène",
         "Rank":3,
         "Max_Lv":11,
         "Min":"150",
@@ -55,6 +58,7 @@
     },
     {
         "Name":"Titanium Bangle",
+		"Name_FR":"Bracelet Titane",
         "Rank":4,
         "Max_Lv":11,
         "Min":"200",
@@ -73,6 +77,7 @@
     },
     {
         "Name":"Gold Bangle",
+		"Name_FR":"Bracelet Or",
         "Rank":5,
         "Max_Lv":11,
         "Min":"250",
@@ -91,6 +96,7 @@
     },
     {
         "Name":"Mythril Bangle",
+		"Name_FR":"Bracelet Mythril",
         "Rank":6,
         "Max_Lv":16,
         "Min":"300",
@@ -109,6 +115,7 @@
     },
     {
         "Name":"Platinum Bangle",
+		"Name_FR":"Bracelet Platine",
         "Rank":7,
         "Max_Lv":21,
         "Min":"400",
@@ -127,6 +134,7 @@
     },
     {
         "Name":"Diamond Bangle",
+		"Name_FR":"Bracelet Diamant",
         "Rank":8,
         "Max_Lv":26,
         "Min":"500",
@@ -145,6 +153,7 @@
     },
     {
         "Name":"Adamant Bangle",
+		"Name_FR":"Bracelet Adamante",
         "Rank":9,
         "Max_Lv":36,
         "Min":"800",
@@ -163,6 +172,7 @@
     },
     {
         "Name":"Wurtzite Bangle",
+		"Name_FR":"Bracelet Wurtzite",
         "Rank":10,
         "Max_Lv":51,
         "Min":"1500",
@@ -181,6 +191,7 @@
     },
     {
         "Name":"Power Wristband",
+		"Name_FR":"Poignet de Force",
         "Rank":2,
         "Max_Lv":6,
         "Min":"20",
@@ -199,6 +210,7 @@
     },
     {
         "Name":"Brawler's Wristband",
+		"Name_FR":"Poignet de Lutteur",
         "Rank":4,
         "Max_Lv":11,
         "Min":"50",
@@ -217,6 +229,7 @@
     },
     {
         "Name":"Warrior's Wristband",
+		"Name_FR":"Poignet de Guerrier",
         "Rank":6,
         "Max_Lv":11,
         "Min":"100",
@@ -235,6 +248,7 @@
     },
     {
         "Name":"Power Glove",
+		"Name_FR":"Gant de Force",
         "Rank":8,
         "Max_Lv":11,
         "Min":"150",
@@ -253,6 +267,7 @@
     },
     {
         "Name":"Kaiser Knuckles",
+		"Name_FR":"Gant de Kaiser",
         "Rank":10,
         "Max_Lv":11,
         "Min":"200",
@@ -271,6 +286,7 @@
     },
     {
         "Name":"Magician's Mark",
+		"Name_FR":"Marque de Magicien",
         "Rank":2,
         "Max_Lv":6,
         "Min":"20",
@@ -289,6 +305,7 @@
     },
     {
         "Name":"Shaman's Mark",
+		"Name_FR":"Marque de Shaman",
         "Rank":4,
         "Max_Lv":11,
         "Min":"50",
@@ -307,6 +324,7 @@
     },
     {
         "Name":"Sorcerer's Mark",
+		"Name_FR":"Marque de Mage",
         "Rank":6,
         "Max_Lv":11,
         "Min":"100",
@@ -325,6 +343,7 @@
     },
     {
         "Name":"Weirding Glyph",
+		"Name_FR":"Rune d'enchanteur",
         "Rank":8,
         "Max_Lv":11,
         "Min":"150",
@@ -343,6 +362,7 @@
     },
     {
         "Name":"Magistral Crest",
+		"Name_FR":"Emblème magistère",
         "Rank":10,
         "Max_Lv":11,
         "Min":"200",
@@ -361,6 +381,7 @@
     },
     {
         "Name":"Black Belt",
+		"Name_FR":"Ceinture Noir",
         "Rank":3,
         "Max_Lv":6,
         "Min":"10",
@@ -379,6 +400,7 @@
     },
     {
         "Name":"General's Belt",
+		"Name_FR":"Ceinture de Général",
         "Rank":6,
         "Max_Lv":11,
         "Min":"15",
@@ -397,6 +419,7 @@
     },
     {
         "Name":"Champion's Belt",
+		"Name_FR":"Ceinture de Héros",
         "Rank":9,
         "Max_Lv":11,
         "Min":"20",
@@ -415,6 +438,7 @@
     },
     {
         "Name":"Rune Bracelet",
+		"Name_FR":"Bracelet Runique",
         "Rank":3,
         "Max_Lv":6,
         "Min":"10",
@@ -433,6 +457,7 @@
     },
     {
         "Name":"Witch's Bracelet",
+		"Name_FR":"Bracelet de sorcier",
         "Rank":6,
         "Max_Lv":11,
         "Min":"15",
@@ -451,6 +476,7 @@
     },
     {
         "Name":"Magus's Bracelet",
+		"Name_FR":"Bracelet de Magus",
         "Rank":9,
         "Max_Lv":11,
         "Min":"20",
@@ -469,6 +495,7 @@
     },
     {
         "Name":"Royal Armlet",
+		"Name_FR":"Gantelet royal",
         "Rank":8,
         "Max_Lv":11,
         "Min":"5",
@@ -487,6 +514,7 @@
     },
     {
         "Name":"Imperial Armlet",
+		"Name_FR":"Gantelet impérial",
         "Rank":10,
         "Max_Lv":6,
         "Min":"10",
@@ -505,6 +533,7 @@
     },
     {
         "Name":"Ember Ring",
+		"Name_FR":"Bague ardente",
         "Rank":2,
         "Max_Lv":6,
         "Min":"20",
@@ -523,6 +552,7 @@
     },
     {
         "Name":"Blaze Ring",
+		"Name_FR":"Bague de feu",
         "Rank":4,
         "Max_Lv":6,
         "Min":"25",
@@ -541,6 +571,7 @@
     },
     {
         "Name":"Salamandrine Ring",
+		"Name_FR":"Bague Salamandre",
         "Rank":6,
         "Max_Lv":6,
         "Min":"30",
@@ -559,6 +590,7 @@
     },
     {
         "Name":"Frost Ring",
+		"Name_FR":"Bague Glaciale",
         "Rank":2,
         "Max_Lv":6,
         "Min":"20",
@@ -577,6 +609,7 @@
     },
     {
         "Name":"Icicle Ring",
+		"Name_FR":"Bague de la Glace",
         "Rank":4,
         "Max_Lv":6,
         "Min":"25",
@@ -595,6 +628,7 @@
     },
     {
         "Name":"Boreal Ring",
+		"Name_FR":"Bague Celsius",
         "Rank":6,
         "Max_Lv":6,
         "Min":"30",
@@ -613,6 +647,7 @@
     },
     {
         "Name":"Spark Ring",
+		"Name_FR":"Bague Etincelante",
         "Rank":2,
         "Max_Lv":6,
         "Min":"20",
@@ -631,6 +666,7 @@
     },
     {
         "Name":"Fulmen Ring",
+		"Name_FR":"Bague de la Foudre",
         "Rank":4,
         "Max_Lv":6,
         "Min":"25",
@@ -649,6 +685,7 @@
     },
     {
         "Name":"Raijin Ring",
+		"Name_FR":"Bague Marutah",
         "Rank":6,
         "Max_Lv":6,
         "Min":"30",
@@ -667,6 +704,7 @@
     },
     {
         "Name":"Aqua Ring",
+		"Name_FR":"Bague Aquatique",
         "Rank":2,
         "Max_Lv":6,
         "Min":"20",
@@ -685,6 +723,7 @@
     },
     {
         "Name":"Riptide Ring",
+		"Name_FR":"Bague de l'Eau",
         "Rank":4,
         "Max_Lv":6,
         "Min":"25",
@@ -703,6 +742,7 @@
     },
     {
         "Name":"Nereid Ring",
+		"Name_FR":"Bague Ondine",
         "Rank":6,
         "Max_Lv":6,
         "Min":"30",
@@ -721,6 +761,7 @@
     },
     {
         "Name":"Zephyr Ring",
+		"Name_FR":"Bague Zéphyr",
         "Rank":2,
         "Max_Lv":6,
         "Min":"20",
@@ -739,6 +780,7 @@
     },
     {
         "Name":"Gale Ring",
+		"Name_FR":"Bague de l'Air",
         "Rank":4,
         "Max_Lv":6,
         "Min":"25",
@@ -757,6 +799,7 @@
     },
     {
         "Name":"Sylphid Ring",
+		"Name_FR":"Bague Sylphe",
         "Rank":6,
         "Max_Lv":6,
         "Min":"30",
@@ -775,6 +818,7 @@
     },
     {
         "Name":"Clay Ring",
+		"Name_FR":"Bague d'Argile",
         "Rank":2,
         "Max_Lv":6,
         "Min":"20",
@@ -793,6 +837,7 @@
     },
     {
         "Name":"Siltstone Ring",
+		"Name_FR":"Bague de la Terre",
         "Rank":4,
         "Max_Lv":6,
         "Min":"25",
@@ -811,6 +856,7 @@
     },
     {
         "Name":"Gaian Ring",
+		"Name_FR":"Bague Gaïa",
         "Rank":6,
         "Max_Lv":6,
         "Min":"30",
@@ -829,6 +875,7 @@
     },
     {
         "Name":"Giant's Glove",
+		"Name_FR":"Gant de Géant",
         "Rank":3,
         "Max_Lv":6,
         "Min":"30",
@@ -847,6 +894,7 @@
     },
     {
         "Name":"Warlord's Glove",
+		"Name_FR":"Gant de Général",
         "Rank":5,
         "Max_Lv":11,
         "Min":"40",
@@ -865,6 +913,7 @@
     },
     {
         "Name":"Glass Buckle",
+		"Name_FR":"Fermoir de Verre",
         "Rank":3,
         "Max_Lv":6,
         "Min":"30",
@@ -883,6 +932,7 @@
     },
     {
         "Name":"Tektite Buckle",
+		"Name_FR":"Fermoir de Tectite",
         "Rank":5,
         "Max_Lv":11,
         "Min":"40",
@@ -901,6 +951,7 @@
     },
     {
         "Name":"Metal Armband",
+		"Name_FR":"Brassard Métallique",
         "Rank":3,
         "Max_Lv":6,
         "Min":"30",
@@ -919,6 +970,7 @@
     },
     {
         "Name":"Ceramic Armband",
+		"Name_FR":"Brassard Céramique",
         "Rank":5,
         "Max_Lv":11,
         "Min":"40",
@@ -937,6 +989,7 @@
     },
     {
         "Name":"Serenity Sachet",
+		"Name_FR":"Sceau de Sérénité",
         "Rank":3,
         "Max_Lv":6,
         "Min":"30",
@@ -955,6 +1008,7 @@
     },
     {
         "Name":"Safeguard Sachet",
+		"Name_FR":"Sceau d'Allégresse",
         "Rank":5,
         "Max_Lv":11,
         "Min":"40",
@@ -973,6 +1027,7 @@
     },
     {
         "Name":"Glass Orb",
+		"Name_FR":"Bille de Verre",
         "Rank":3,
         "Max_Lv":6,
         "Min":"30",
@@ -991,6 +1046,7 @@
     },
     {
         "Name":"Dragonfly Orb",
+		"Name_FR":"Perle Nacrée",
         "Rank":5,
         "Max_Lv":11,
         "Min":"40",
@@ -1009,6 +1065,7 @@
     },
     {
         "Name":"Star Pendant",
+		"Name_FR":"Pendentif Etoilé",
         "Rank":3,
         "Max_Lv":6,
         "Min":"30",
@@ -1027,6 +1084,7 @@
     },
     {
         "Name":"Starfall Pendant",
+		"Name_FR":"Pendentif Comète",
         "Rank":5,
         "Max_Lv":11,
         "Min":"40",
@@ -1045,6 +1103,7 @@
     },
     {
         "Name":"Pearl Necklace",
+		"Name_FR":"Collier de Perles",
         "Rank":3,
         "Max_Lv":6,
         "Min":"30",
@@ -1063,6 +1122,7 @@
     },
     {
         "Name":"Gemstone Necklace",
+		"Name_FR":"Collier de Gemmes",
         "Rank":5,
         "Max_Lv":11,
         "Min":"40",
@@ -1081,6 +1141,7 @@
     },
     {
         "Name":"Warding Talisman",
+		"Name_FR":"Talisman Enchanté",
         "Rank":3,
         "Max_Lv":6,
         "Min":"30",
@@ -1099,6 +1160,7 @@
     },
     {
         "Name":"Hexbane Talisman",
+		"Name_FR":"Talisman Magique",
         "Rank":5,
         "Max_Lv":11,
         "Min":"40",
@@ -1117,6 +1179,7 @@
     },
     {
         "Name":"Pain Dampener",
+		"Name_FR":"Résine Antalgique",
         "Rank":3,
         "Max_Lv":6,
         "Min":"30",
@@ -1135,6 +1198,7 @@
     },
     {
         "Name":"Pain Deflector",
+		"Name_FR":"Résine Analgésique",
         "Rank":5,
         "Max_Lv":11,
         "Min":"40",
@@ -1153,6 +1217,7 @@
     },
     {
         "Name":"White Cape",
+		"Name_FR":"Cape Blanche",
         "Rank":3,
         "Max_Lv":6,
         "Min":"30",
@@ -1171,6 +1236,7 @@
     },
     {
         "Name":"Effulgent Cape",
+		"Name_FR":"Cape Radieuse",
         "Rank":5,
         "Max_Lv":11,
         "Min":"40",
@@ -1189,6 +1255,7 @@
     },
     {
         "Name":"Rainbow Anklet",
+		"Name_FR":"Chevillère Irisée",
         "Rank":3,
         "Max_Lv":6,
         "Min":"30",
@@ -1207,6 +1274,7 @@
     },
     {
         "Name":"Moonbow Anklet",
+		"Name_FR":"Chevillère Nacrée",
         "Rank":5,
         "Max_Lv":11,
         "Min":"40",
@@ -1225,6 +1293,7 @@
     },
     {
         "Name":"Cherub's Crown",
+		"Name_FR":"Couronne Chérubin",
         "Rank":3,
         "Max_Lv":6,
         "Min":"30",
@@ -1243,6 +1312,7 @@
     },
     {
         "Name":"Seraph's Crown",
+		"Name_FR":"Couronne Séraphin",
         "Rank":5,
         "Max_Lv":11,
         "Min":"40",
@@ -1261,6 +1331,7 @@
     },
     {
         "Name":"Guardian Amulet",
+		"Name_FR":"Amulette Egide",
         "Rank":2,
         "Max_Lv":2,
         "Min":"-",
@@ -1279,6 +1350,7 @@
     },
     {
         "Name":"Shield Talisman",
+		"Name_FR":"Talisman Egide",
         "Rank":5,
         "Max_Lv":2,
         "Min":"-",
@@ -1297,6 +1369,7 @@
     },
     {
         "Name":"Auric Amulet",
+		"Name_FR":"Amulette Spirituelle",
         "Rank":2,
         "Max_Lv":2,
         "Min":"-",
@@ -1315,6 +1388,7 @@
     },
     {
         "Name":"Soulfont Talisman",
+		"Name_FR":"Talisman Spirituel",
         "Rank":5,
         "Max_Lv":2,
         "Min":"-",
@@ -1333,6 +1407,7 @@
     },
     {
         "Name":"Watchman's Amulet",
+		"Name_FR":"Amulette Gardienne",
         "Rank":2,
         "Max_Lv":2,
         "Min":"-",
@@ -1351,6 +1426,7 @@
     },
     {
         "Name":"Shrouding Talisman",
+		"Name_FR":"Talisman Gardien",
         "Rank":5,
         "Max_Lv":2,
         "Min":"-",
@@ -1369,6 +1445,7 @@
     },
     {
         "Name":"Hero's Amulet",
+		"Name_FR":"Amulette de Héros",
         "Rank":2,
         "Max_Lv":2,
         "Min":"-",
@@ -1387,6 +1464,7 @@
     },
     {
         "Name":"Morale Talisman",
+		"Name_FR":"Talisman de Héros",
         "Rank":5,
         "Max_Lv":2,
         "Min":"-",
@@ -1405,6 +1483,7 @@
     },
     {
         "Name":"Saint's Amulet",
+		"Name_FR":"Amulette de Magus",
         "Rank":2,
         "Max_Lv":2,
         "Min":"-",
@@ -1423,6 +1502,7 @@
     },
     {
         "Name":"Blessed Talisman",
+		"Name_FR":"Talisman de Magus",
         "Rank":5,
         "Max_Lv":2,
         "Min":"-",
@@ -1441,6 +1521,7 @@
     },
     {
         "Name":"Zealot's Amulet",
+		"Name_FR":"Amulette d'Ardeur",
         "Rank":2,
         "Max_Lv":2,
         "Min":"-",
@@ -1459,6 +1540,7 @@
     },
     {
         "Name":"Battle Talisman",
+		"Name_FR":"Talisman Guerrier",
         "Rank":5,
         "Max_Lv":2,
         "Min":"-",
@@ -1477,6 +1559,7 @@
     },
     {
         "Name":"Flamebane Brooch",
+		"Name_FR":"Boucle Pyrofuge",
         "Rank":2,
         "Max_Lv":2,
         "Min":"-",
@@ -1495,6 +1578,7 @@
     },
     {
         "Name":"Flameshield Earring",
+		"Name_FR":"Anneau Pyrofuge",
         "Rank":5,
         "Max_Lv":2,
         "Min":"-",
@@ -1513,6 +1597,7 @@
     },
     {
         "Name":"Frostbane Brooch",
+		"Name_FR":"Boucle Cryofuge",
         "Rank":2,
         "Max_Lv":2,
         "Min":"-",
@@ -1531,6 +1616,7 @@
     },
     {
         "Name":"Frostshield Earring",
+		"Name_FR":"Anneau Cryofuge",
         "Rank":5,
         "Max_Lv":2,
         "Min":"-",
@@ -1549,6 +1635,7 @@
     },
     {
         "Name":"Sparkbane Brooch",
+		"Name_FR":"Boucle Electrofuge",
         "Rank":2,
         "Max_Lv":2,
         "Min":"-",
@@ -1567,6 +1654,7 @@
     },
     {
         "Name":"Sparkshield Earring",
+		"Name_FR":"Anneau Electrofuge",
         "Rank":5,
         "Max_Lv":2,
         "Min":"-",
@@ -1585,6 +1673,7 @@
     },
     {
         "Name":"Aquabane Brooch",
+		"Name_FR":"Boucle hydrofuge",
         "Rank":2,
         "Max_Lv":2,
         "Min":"-",
@@ -1603,6 +1692,7 @@
     },
     {
         "Name":"Aquashield Earring",
+		"Name_FR":"Anneau hydrofuge",
         "Rank":5,
         "Max_Lv":2,
         "Min":"-",
@@ -1621,6 +1711,7 @@
     },
     {
         "Name":"Hermes Sandals",
+		"Name_FR":"Sandales Ailées",
         "Rank":2,
         "Max_Lv":2,
         "Min":"-",
@@ -1639,6 +1730,7 @@
     },
     {
         "Name":"Sprint Shoes",
+		"Name_FR":"Sandales d'Hermès",
         "Rank":5,
         "Max_Lv":2,
         "Min":"-",
@@ -1657,6 +1749,7 @@
     },
     {
         "Name":"Tetradic Crown",
+		"Name_FR":"Couronne Carrée",
         "Rank":4,
         "Max_Lv":2,
         "Min":"-",
@@ -1675,6 +1768,7 @@
     },
     {
         "Name":"Tetradic Tiara",
+		"Name_FR":"Tiare Carrée",
         "Rank":8,
         "Max_Lv":2,
         "Min":"-",
@@ -1693,6 +1787,7 @@
     },
     {
         "Name":"Whistlewind Scarf",
+		"Name_FR":"Foulard Siffle-vent",
         "Rank":2,
         "Max_Lv":2,
         "Min":"-",
@@ -1711,6 +1806,7 @@
     },
     {
         "Name":"Aurora Scarf",
+		"Name_FR":"Foulard Vif-éclair",
         "Rank":3,
         "Max_Lv":2,
         "Min":"-",
@@ -1729,6 +1825,7 @@
     },
     {
         "Name":"Nimbletoe Boots",
+		"Name_FR":"Bottes d'Agilité",
         "Rank":4,
         "Max_Lv":2,
         "Min":"-",
@@ -1747,6 +1844,7 @@
     },
     {
         "Name":"Gold Watch",
+		"Name_FR":"Montre en Or",
         "Rank":3,
         "Max_Lv":2,
         "Min":"-",
@@ -1765,6 +1863,7 @@
     },
     {
         "Name":"Champion's Badge",
+		"Name_FR":"Médaille d'Or",
         "Rank":4,
         "Max_Lv":2,
         "Min":"-",
@@ -1783,6 +1882,7 @@
     },
     {
         "Name":"Survivalist Catalog",
+		"Name_FR":"Trèfle de Jade",
         "Rank":5,
         "Max_Lv":2,
         "Min":"-",
@@ -1801,6 +1901,7 @@
     },
     {
         "Name":"Collector Catalog",
+		"Name_FR":"Trèfle d'Argent",
         "Rank":6,
         "Max_Lv":2,
         "Min":"-",
@@ -1819,6 +1920,7 @@
     },
     {
         "Name":"Connoisseur Catalog",
+		"Name_FR":"Trèfle d'Or",
         "Rank":7,
         "Max_Lv":2,
         "Min":"-",
@@ -1837,6 +1939,7 @@
     },
     {
         "Name":"Hunter's Friend",
+		"Name_FR":"Guide de Chasse",
         "Rank":5,
         "Max_Lv":2,
         "Min":"-",
@@ -1855,6 +1958,7 @@
     },
     {
         "Name":"Speed Sash",
+		"Name_FR":"Ceinturon Vivifiant",
         "Rank":6,
         "Max_Lv":2,
         "Min":"-",
@@ -1873,6 +1977,7 @@
     },
     {
         "Name":"Energy Sash",
+		"Name_FR":"Ceinturon Stimulant",
         "Rank":7,
         "Max_Lv":2,
         "Min":"-",
@@ -1891,6 +1996,7 @@
     },
     {
         "Name":"Doctor's Code",
+		"Name_FR":"Code de Médecine",
         "Rank":2,
         "Max_Lv":2,
         "Min":"-",
@@ -1909,6 +2015,7 @@
     },
     {
         "Name":"Fire Charm",
+		"Name_FR":"Charme de Feu",
         "Rank":5,
         "Max_Lv":2,
         "Min":"-",
@@ -1927,6 +2034,7 @@
     },
     {
         "Name":"Ice Charm",
+		"Name_FR":"Charme de Glace",
         "Rank":5,
         "Max_Lv":2,
         "Min":"-",
@@ -1945,6 +2053,7 @@
     },
     {
         "Name":"Lightning Charm",
+		"Name_FR":"Charme de Foudre",
         "Rank":5,
         "Max_Lv":2,
         "Min":"-",
@@ -1963,6 +2072,7 @@
     },
     {
         "Name":"Water Charm",
+		"Name_FR":"Charme d'Eau",
         "Rank":5,
         "Max_Lv":2,
         "Min":"-",
@@ -1981,6 +2091,7 @@
     },
     {
         "Name":"Wind Charm",
+		"Name_FR":"Charme d'Air",
         "Rank":5,
         "Max_Lv":2,
         "Min":"-",
@@ -1999,6 +2110,7 @@
     },
     {
         "Name":"Earth Charm",
+		"Name_FR":"Charme de Terre",
         "Rank":5,
         "Max_Lv":2,
         "Min":"-",
@@ -2017,6 +2129,7 @@
     },
     {
         "Name":"Twenty-sided Die",
+		"Name_FR":"Dé a Vingts Faces",
         "Rank":7,
         "Max_Lv":2,
         "Min":"-",
@@ -2035,6 +2148,7 @@
     },
     {
         "Name":"Growth Egg",
+		"Name_FR":"Œuf de croissance",
         "Rank":8,
         "Max_Lv":2,
         "Min":"-",
@@ -2053,6 +2167,7 @@
     },
     {
         "Name":"Entite Ring",
+		"Name_FR":"Bague des Esprits",
         "Rank":5,
         "Max_Lv":16,
         "Min":"10",
@@ -2071,6 +2186,7 @@
     },
     {
         "Name":"Goddess's Favor",
+		"Name_FR":"Faveur Divine",
         "Rank":6,
         "Max_Lv":2,
         "Min":"-",
@@ -2089,6 +2205,7 @@
     },
     {
         "Name":"Ribbon",
+		"Name_FR":"Ruban",
         "Rank":9,
         "Max_Lv":6,
         "Min":"20",
@@ -2107,6 +2224,7 @@
     },
     {
         "Name":"Super Ribbon",
+		"Name_FR":"Ruban Raffiné",
         "Rank":10,
         "Max_Lv":6,
         "Min":"25",
@@ -2125,6 +2243,7 @@
     },
     {
         "Name":"Genji Glove",
+		"Name_FR":"Gant Genji",
         "Rank":9,
         "Max_Lv":2,
         "Min":"-",
